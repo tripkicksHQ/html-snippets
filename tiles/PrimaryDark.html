@@ -1,0 +1,24 @@
+<div style="position: relative; width: 100%; height: 100%; min-height: 90px; padding: 0.4rem;">
+  <!-- Background fill layer (same as border color) -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #434c5c; z-index: 0;"></div>
+
+  <!-- Foreground Card -->
+  <div style="position: relative; background-color: #1a1a1a; border-radius: 16px; border: 5px solid #434c5c; padding: 1.25rem 1rem 1.25rem 0.5rem; display: flex; align-items: stretch; color: #ccc; width: 100%; height: 100%; min-height: 120px; box-sizing: border-box; font-family: Segoe UI, sans-serif; overflow: hidden; z-index: 1;">
+
+    <!-- Inverted Enhanced Reflection Overlay -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; background: linear-gradient(225deg, rgba(255,255,255,0.18) 0%, rgba(255,240,255,0.18) 20%, rgba(255,255,255,0.025) 50%, rgba(255,255,255,0) 75%); opacity: 0.35; mix-blend-mode: screen; z-index: 1;"></div>
+
+    <!-- Colored Side Bar with stacked brightness overlay -->
+    <div style="width: 4px; background: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 10%, rgba(255,255,255,0.4) 10%, rgba(255,255,255,0.4) 40%, rgba(255,255,255,0.15) 40%, rgba(255,255,255,0.15) 70%, rgba(255,255,255,0.0) 70%, rgba(255,255,255,0.0) 100%), #ff9820; border-radius: 4px; margin-right: 1rem; flex-shrink: 0; z-index: 3;" data-color-title="color_Title"></div>
+
+    <!-- Text Content -->
+    <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; z-index: 4;">
+      <div style="color: #ff9820; font-weight: 600; font-size: clamp(0.45rem,0.75vw,0.85rem); margin-bottom: 0.25rem;" data-color-title="color_Title">
+        Primary Tile - Dark
+      </div>
+      <div class="lead" style="color: #ffffff; font-size: clamp(0.6rem,1.2vw,1.2rem); line-height: 1.2; margin-bottom: 0.25rem;" data-color-text="color_Text">
+        A Primary tile has a colored bar matching title text color with 2-3 lines of focused guidance. Sits below Lead and above Secondary tiles.
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div style="position: relative; width: 100%; height: 100%; box-sizing: border-box;">
+
+  <!-- Background Layer (absolute, bounded by wrapper) -->
+  <div style="position: absolute; top: 0; left: 0; bottom: 2px; width: 100%; height: 100%; background-color: #434c5c; z-index: 0;"></div>
+
+  <!-- Foreground Card -->
+  <div style="position: relative; background-color: #1a1a1a; border: 5px solid #434c5c; border-radius: 16px; padding: 1.25rem 0.5rem; display: flex; align-items: stretch; color: #ccc; width: 100%; height: 75%; min-height: 70px; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; overflow: hidden; z-index: 1;">
+
+    <!-- Inverted Enhanced Reflection Overlay -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; background: linear-gradient(225deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 240, 255, 0.18) 20%, rgba(255, 255, 255, 0.025) 50%, rgba(255, 255, 255, 0) 75%); opacity: 0.35; mix-blend-mode: screen; z-index: 1;"></div>
+
+    <!-- Colored Side Bar with stacked brightness overlay -->
+    <div style="width: 4px; background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0.4) 10%, rgba(255, 255, 255, 0.4) 40%, rgba(255, 255, 255, 0.15) 40%, rgba(255, 255, 255, 0.15) 70%, rgba(255, 255, 255, 0.0) 70%, rgba(255, 255, 255, 0.0) 100%), #70b5ff; border-radius: 4px; margin-right: 1rem; flex-shrink: 0; z-index: 2;" data-color-title="color_Title"></div>
+
+    <!-- Text Content -->
+    <div style="padding-left: 0.5rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; z-index: 2;">
+      <div style="color: #f3f1f6; font-weight: 600; font-size: clamp(0.45rem, 0.75vw, 0.85rem); margin-bottom: 0.25rem;" data-color-title="color_Title">
+        Secondary Tile - Dark
+      </div>
+      <div style="color: #DCD8EA; font-size: clamp(0.25rem, 1vw, 0.8rem); line-height: 1.2;" data-color-text="color_Text">
+        Compact variant with a standard light-blue bar, optional small headline, and one to two lines of text.
+      </div>
+    </div>
+
+  </div>
+</div>

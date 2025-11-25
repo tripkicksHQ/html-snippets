@@ -1,0 +1,22 @@
+<div style="position: relative; width: 100%; height: 100%; min-height: 90px; padding: 0.4rem;">
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #eef3fa; z-index: 0;"></div>
+
+  <div style="position: relative; background-color: #f8f9fa; border-radius: 16px; border: 5px solid #eef3fa; padding: 1.25rem 1rem 1.25rem 0.5rem; display: flex; align-items: stretch; color: #333; width: 100%; height: 100%; min-height: 140px; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; overflow: hidden; z-index: 1;">
+
+    <!-- Light UI Reflection with Right-side Highlight -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; background: linear-gradient(to top right, rgba(200,220,255,0.25) 0%, rgba(255,255,255,0.4) 40%, rgba(255,255,255,0.6) 75%, rgba(255,255,255,0.8) 100%); opacity: 0.95; mix-blend-mode: overlay; z-index: 2;"></div>
+
+    <!-- Colored Side Bar with stacked brightness overlay -->
+    <div style="width: 4px; background: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 10%, rgba(255,255,255,0.4) 10%, rgba(255,255,255,0.4) 40%, rgba(255,255,255,0.15) 40%, rgba(255,255,255,0.15) 70%, rgba(255,255,255,0.0) 70%, rgba(255,255,255,0.0) 100%), #ff9820; border-radius: 4px; margin-right: 1rem; flex-shrink: 0; z-index: 4;" data-color-title="color_Title"></div>
+
+    <!-- Text Content -->
+    <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; z-index: 5;">
+      <div style="color: #ff9820; font-weight: 600; font-size: clamp(0.45rem, 0.75vw, 0.85rem); margin-bottom: 0.25rem;" data-color-title="color_Title">
+        Primary - Light
+      </div>
+      <div class="lead" style="color: #000000; font-size: clamp(0.6rem, 1.2vw, 1.2rem); line-height: 1.2; margin-bottom: 0.25rem;" data-color-text="color_Text">
+        A Primary tile has a colored bar matching title text color with 2-3 lines of focused guidance. Sits below Lead and above Secondary tiles.
+      </div>
+    </div>
+  </div>
+</div>
